@@ -6,3 +6,8 @@ To get started with TDD, see the `README.md` file in your
 `ruby/hello-world` directory.
 =end
 
+class HelloWorld
+  def self.hello
+    @hello = "Hello World!"
+  end
+end

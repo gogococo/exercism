@@ -49,7 +49,7 @@ On OS X and Linux, the error will be something like:
     HelloWorldTest#test_say_hi:
     NameError: uninitialized constant HelloWorldTest::HelloWorld
     Did you mean?  HelloWorldTest
-        hello_world_test.rb:19:in `test_say_hi'
+        hello_world_test.rb:19:in `test_say_hi`
 
     1 runs, 0 assertions, 0 failures, 1 errors, 0 skips
 
@@ -125,4 +125,3 @@ When everything is passing, you can submit your code with the following
 command:
 
     $ exercism submit hello_world.rb
-

@@ -5,11 +5,17 @@
 // https://golang.org/doc/effective_go.html#commentary
 package leap
 
-// IsLeapYear should have a comment documenting it.
-func IsLeapYear(int) bool {
-	// Write some code here to pass the test suite.
-	// Then remove all the stock comments.
-	// They're here to help you get started but they only clutter a finished solution.
-	// If you leave them in, reviewers may protest!
+// Given a year, identify if it is a leap year.
+func IsLeapYear(year int) bool {
+	if year % 4 == 0  {
+		if year % 100 == 0 {
+			if year % 400 == 0 {
+				return true
+			}
+			return false
+		}
+		return true
+	}
 	return false
+
 }

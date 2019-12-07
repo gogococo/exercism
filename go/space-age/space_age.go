@@ -1,5 +1,6 @@
 package space
 
+const seconds_in_a_year = 31557600
 type Planet string
 func Age(seconds float64, planet Planet) float64 {
   planets := map[Planet]float64{
@@ -12,7 +13,5 @@ func Age(seconds float64, planet Planet) float64 {
     "Uranus": 84.016846,
     "Neptune": 164.79132,
   }
-  const seconds_in_a_year = 31557600
   return seconds / seconds_in_a_year / planets[planet]
-
 }

@@ -1,11 +1,12 @@
-// A package containing 1 function that helps users to share, 
+// Package twofer implements a function for sharing.
 package twofer
 
-// A simple function that takes in a name & outputs
-// "One for {name}, one for me."
+// ShareWith helps you to share another person.
 func ShareWith(name string) string {
-	var name_to_print string = "you"
-	if name != "" { name_to_print = name}
+	var nameToPrint string = "you"
+	if name != "" {
+		nameToPrint = name
+	}
 
-	return "One for " + name_to_print + ", one for me."
+	return "One for " + nameToPrint + ", one for me."
 }

@@ -2,13 +2,12 @@ package hamming
 
 import "errors"
 
+// TODO:
+// Convert strings to rune slices first ?
+
 // Distance calculates the Hamming Distance between two Strings.
 func Distance(a, b string) (int, error) {
 	var HammingCount int = 0
-
-	if len(a) != len(b) {
-		return -1, errors.New("Strings are not same length")
-	}
 
 	if len(a) == len(b) {
 		if a != b {
@@ -18,6 +17,7 @@ func Distance(a, b string) (int, error) {
 				}
 			}
 		}
+		return HammingCount, nil
 	}
-	return HammingCount, nil
+	return -0, errors.New("strings are not same length")
 }

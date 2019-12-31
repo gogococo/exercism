@@ -4,19 +4,19 @@ import "strconv"
 
 // Convert will check the given int for factors 3, 5 or 7 and return "Pling", "Plang" or "Plong" respectively
 func Convert(n int) string {
-	FinalString := ""
+	finalString := ""
 
 	if n%3 == 0 {
-		FinalString += "Pling"
+		finalString += "Pling"
 	}
 	if n%5 == 0 {
-		FinalString += "Plang"
+		finalString += "Plang"
 	}
 	if n%7 == 0 {
-		FinalString += "Plong"
+		finalString += "Plong"
 	}
-	if FinalString == "" {
-		FinalString = strconv.Itoa(n)
+	if finalString == "" {
+		finalString = strconv.Itoa(n)
 	}
-	return FinalString
+	return finalString
 }
